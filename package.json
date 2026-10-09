@@ -1,0 +1,22 @@
+{
+  "name": "pathsmith-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "engines": { "node": ">=24 <25" },
+  "scripts": {
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "node --test tests/*.test.mjs",
+    "demo": "node demo/run.mjs"
+  },
+  "devDependencies": {
+    "@pathsmith/contracts": "workspace:*",
+    "@pathsmith/core": "workspace:*",
+    "@pathsmith/evaluation": "workspace:*",
+    "@pathsmith/provider-mock": "workspace:*",
+    "@types/node": "24.13.6",
+    "typescript": "5.9.3"
+  }
+}
